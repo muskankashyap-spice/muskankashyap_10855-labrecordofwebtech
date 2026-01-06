@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Pages Deployment Steps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #34495e;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Deploy Website using GitHub Pages</h1>
+
+    <div class="container">
+        <h2>Step 1: Initialize Git Repository</h2>
+        <pre>
+git init
+git add .
+git commit -m "Initial commit"
+        </pre>
+
+        <h2>Step 2: Connect to GitHub Repository</h2>
+        <pre>
+git branch -M main
+git remote add origin https://github.com/username/repository-name.git
+git push -u origin main
+        </pre>
+
+        <h2>Step 3: Enable GitHub Pages</h2>
+        <ul>
+            <li>Open your repository on GitHub</li>
+            <li>Go to <b>Settings</b></li>
+            <li>Click on <b>Pages</b></li>
+            <li>Select <b>Main branch</b></li>
+            <li>Click <b>Save</b></li>
+        </ul>
+
+        <h2>Result</h2>
+        <p>
+            Your website will be live at:
+            <br>
+            <b>https://username.github.io/repository-name/</b>
+        </p>
+    </div>
+
+    <footer>
+        Practical No. 20 | GitHub Pages Deployment
+    </footer>
+
+</body>
+</html>
